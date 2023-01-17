@@ -5,10 +5,137 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Велики</title>
 </head>
 
-<body>
+<body class="page">
+
+  <header class="header">
+    <nav class="header__navigation">
+      <ul class="header__nav-links">
+        <li class="header__link"><a href="#surface" class="link">Покрытия и градиенты</a></li>
+        <li class="header__link"><a href="#bikes" class="link">Велосипеды</a></li>
+        <li class="header__link"><a href="#training" class="link">Тренировки</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title section-title">Шоссе, ТТ и Грэвел</h1>
+        <p class="hero__text section-text">Триатлонные старты, горные серпантины или грейвел заезды по живописным
+          маршрутам — нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <a href="#" class="button hero__button">Подробнее</a>
+        <p class="hero__bike-name">Cannondale Systemsix</p>
+      </div>
+      <div class="hero__image"></div>
+      <div class="hero__sticky">
+        <img src="./images/bike-fix.png" alt="Модель Cannondale Systemsix" class="hero__bike-sticky">
+      </div>
+    </section>
+
+    <section class="quote" aria-label="Секция с цитатой">
+      <div class="quote__image"></div>
+      <figure class="quote__content">
+        <blockquote class="quote__text">
+          «Катайся много или мало, долго или коротко, как хочешь — но катайся»
+        </blockquote>
+        <figcaption class="quote__source">
+          <p class="quote__author">Эдди Меркс</p>
+          <p class="quote__author-who-is">Велогонщик</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="surface" id="surface">
+      <h2 class="surface__title section-title">Шоссе</h2>
+      <p class="surface__text section-text">На шоссейном велосипеде можно ездить по асфальту на разных
+        градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и
+        самостоятельно.</p>
+      <div class="surface__gallery">
+        <img src="./images/surface-1.jpg" alt="Иллюстрация: типы градиентов" class="surface__image">
+        <img src="./images/surface-2.jpg" alt="Иллюстрация: типы градиентов" class="surface__image">
+
+        <div class="surface__type surface__type_1">
+          <svg width="98" height="40" viewBox="0 0 98 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 0H93.5279C96.5014 0 98.4354 3.12925 97.1056 5.78885L81.1056 37.7889C80.428 39.144 79.043 40 77.5279 40H0V0Z"
+              fill="#24B47E" />
+            <path
+              d="M16 28L24.3893 16.6136C26.0392 14.3744 29.4142 14.4609 30.9472 16.7816L37.1718 26.2047C37.9123 27.3256 39.1659 28 40.5094 28H49H66"
+              stroke="white" stroke-width="2" />
+          </svg>
+        </div>
+
+      </div>
+      <div class="surface__switcher-buttons">
+        <button class="surface__button surface__button_left">
+          <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L2 9L9 17" stroke="#151515" stroke-width="2" />
+          </svg>
+        </button>
+        <button class="surface__button surface__button_right">
+          <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 17L8 9L1 0.999999" stroke="#151515" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="bikes" id="bikes">
+      <div class="bikes__top">
+        <h2 class="bikes__title section-title">Велосипеды</h2>
+        <div class="bikes__surface-types">
+          <a href="#" class="bikes__type bikes__type_active link">Шоссе</a>
+          <a href="#" class="bikes__type link">Грэвел</a>
+          <a href="#" class="bikes__type link">ТТ</a>
+        </div>
+      </div>
+      <div class="bikes__gallery">
+        <div class="bikes__model">
+          <img src="./images/bike_Cervelo-Caledonia-5.png" alt="Модель Cervelo Caledonia-5" class="bikes__image">
+          <a href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN"
+            class="bikes__name">Cervelo Caledonia-5</a>
+        </div>
+        <div class="bikes__model">
+          <img src="./images/bike_Cannondale-Systemsix-Himod.png" alt="Модель Cannondale Systemsix Himod"
+            class="bikes__image">
+          <a href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J"
+            class="bikes__name">Cannondale Systemsix Himod</a>
+        </div>
+        <div class="bikes__model">
+          <img src="./images/bike_Trek-Domane-SL-7.png" alt="Модель Trek Domane SL-7" class="bikes__image">
+          <a href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF"
+            class="bikes__name">Trek Domane SL-7</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="training" id="training">
+      <div class="training__content">
+        <h2 class="section-title">Тренировки</h2>
+        <p class="section-text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать
+          эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+        <div class="training__apps">
+          <a href="https://www.komoot.com" class="link">Komoot</a>
+          <a href="https://www.strava.com" class="link">Strava</a>
+        </div>
+      </div>
+      <div class="training__image"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <form action="" class="mailing-list">
+      <h2 class="mailing-list__title">Подпишитесь на<br>рассылку —</h2>
+      <input type="email" class="mailing-list__input">
+    </form>
+    <p class="footer__copyright">© Road Club 2021</p>
+  </footer>
 
 </body>
 
