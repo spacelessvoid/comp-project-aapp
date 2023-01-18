@@ -5,10 +5,139 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Шоссе, ТТ и Грэвел</title>
 </head>
 
-<body>
+<body class="page">
+
+  <header class="header">
+    <nav class="header__navigation">
+      <ul class="header__nav-links">
+        <li class="header__link"><a href="#surface" class="link">Покрытия и&nbsp;градиенты</a></li>
+        <li class="header__link"><a href="#bikes" class="link">Велосипеды</a></li>
+        <li class="header__link"><a href="#training" class="link">Тренировки</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title section-title">Шоссе, ТТ и&nbsp;Грэвел</h1>
+        <p class="hero__text section-text">Триатлонные старты, горные серпантины или грейвел заезды по живописным
+          маршрутам — нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <a href="#" class="button hero__button">Подробнее</a>
+        <p class="hero__bike-name">Cannondale Systemsix</p>
+      </div>
+      <div class="hero__image">
+        <div class="hero__sticky"></div>
+      </div>
+
+    </section>
+
+    <section class="quote section-center" aria-label="Секция с цитатой">
+      <div class="quote__image"></div>
+      <figure class="quote__content">
+        <blockquote class="quote__text">
+          «Катайся много или мало, долго или коротко, как хочешь — но катайся»
+        </blockquote>
+        <figcaption class="quote__source">
+          <p class="quote__author">Эдди Меркс</p>
+          <p class="quote__author-who-is">Велогонщик</p>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="surface section-center" id="surface">
+      <h2 class="surface__title section-title">Шоссе</h2>
+      <p class="surface__text section-text">На шоссейном велосипеде можно ездить по асфальту на разных
+        градиентах: будь то горы или равнины. Гонки проходят в командном пелотоне, но тренироваться можно и
+        самостоятельно.</p>
+      <div class="surface__gallery">
+        <img src="./images/surface-1.jpg" alt="Иллюстрация: типы градиентов" class="surface__image">
+        <img src="./images/surface-2.jpg" alt="Иллюстрация: типы градиентов" class="surface__image">
+
+        <div class="surface__type surface__type_1">
+        </div>
+
+      </div>
+      <div class="surface__switcher-buttons">
+        <button class="surface__button surface__button_left">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="50" rx="25" fill="#434343" />
+            <path d="M27 17L20 25L27 33" stroke="white" stroke-width="2" />
+          </svg>
+
+        </button>
+        <button class="surface__button surface__button_right">
+          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="50" rx="25" fill="#434343" />
+            <path d="M23 33L30 25L23 17" stroke="white" stroke-width="2" />
+          </svg>
+
+        </button>
+      </div>
+    </section>
+
+    <section class="bikes section-center" id="bikes">
+      <div class="bikes__top">
+        <h2 class="bikes__title section-title">Велосипеды</h2>
+        <div class="bikes__surface-types">
+          <a href="#" class="bikes__type link">Шоссе</a>
+          <a href="#" class="bikes__type bikes__type_inactive link">Грэвел</a>
+          <a href="#" class="bikes__type bikes__type_inactive link">ТТ</a>
+        </div>
+      </div>
+      <div class="bikes__gallery">
+        <div class="bikes__model">
+          <a class="bikes__link"
+            href="https://www.sigmasports.com/item/Cervelo/Caledonia-5-Ultegra-Disc-Road-Bike-2021/RDEN">
+            <img src="./images/bike_Cervelo-Caledonia-5.png" alt="Модель Cervelo Caledonia-5" class="bikes__image">
+          </a>
+          <p class="bikes__name">Cervelo Caledonia-5</p>
+        </div>
+        <div class="bikes__model">
+          <a class="bikes__link"
+            href="https://www.sigmasports.com/item/Cannondale/SystemSix-HiMOD-Ultegra-Di2-Disc-Road-Bike-2021/R82J">
+            <img src="./images/bike_Cannondale-Systemsix-Himod.png" alt="Модель Cannondale Systemsix Himod"
+              class="bikes__image">
+          </a>
+          <p class="bikes__name">Cannondale Systemsix Himod</>
+        </div>
+        <div class="bikes__model">
+          <a class="bikes__link"
+            href="https://www.sigmasports.com/item/Trek/Domane-SL-7-Force-eTap-AXS-Disc-Road-Bike-2021/RULF">
+            <img src="./images/bike_Trek-Domane-SL-7.png" alt="Модель Trek Domane SL-7" class="bikes__image">
+          </a>
+          <p class="bikes__name">Trek Domane SL-7</>
+        </div>
+      </div>
+    </section>
+
+    <section class="training section-center" id="training">
+      <div class="training__content">
+        <h2 class="section-title">Тренировки</h2>
+        <p class="section-text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать
+          эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+        <div class="training__apps">
+          <a href="https://www.komoot.com" class="link">Komoot</a>
+          <a href="https://www.strava.com" class="link">Strava</a>
+        </div>
+      </div>
+      <div class="training__image"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer section-center">
+    <form action="" class="mailing-list">
+      <h2 class="mailing-list__title">Подпишитесь на<br>рассылку —</h2>
+      <input type="email" placeholder="Ваш e-mail" class="mailing-list__input">
+    </form>
+    <p class="footer__copyright">© Road Club 2021</p>
+  </footer>
 
 </body>
 

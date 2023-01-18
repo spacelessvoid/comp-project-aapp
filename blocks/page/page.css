@@ -1,0 +1,6 @@
+.page {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  background-color: var(--clr-background-primary);
+  color: var(--clr-text-primary);
+}

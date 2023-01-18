@@ -1,0 +1,6 @@
+.bikes__surface-types {
+  display: flex;
+  gap: 40px;
+  align-items: flex-end;
+  margin-bottom: 55px;
+}

@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  color: var(--clr-text-primary);
+  transition: opacity .3s linear;
+}
+
+.link:hover {
+  opacity: .65;
+  transition: opacity .3s linear;
+}

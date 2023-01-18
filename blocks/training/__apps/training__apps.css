@@ -1,0 +1,8 @@
+.training__apps {
+  margin-top: auto;
+  display: flex;
+  gap: 30px;
+  font-size: 18px;
+  line-height: 1.55;
+  font-weight: 600;
+}

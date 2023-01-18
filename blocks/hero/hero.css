@@ -1,0 +1,7 @@
+.hero {
+  box-sizing: border-box;
+  padding: 20px 0 60px 120px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: minmax(400px, 660px) minmax(400px, 610px);
+}
