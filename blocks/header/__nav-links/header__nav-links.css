@@ -1,0 +1,8 @@
+.header__nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 34px;
+}

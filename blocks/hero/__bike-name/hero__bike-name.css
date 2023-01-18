@@ -1,0 +1,16 @@
+.hero__bike-name {
+  position: relative;
+  margin-top: 167px;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.hero__bike-name::after {
+  content: '';
+  background-color: #707070;
+  width: 132px;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  left: 224px;
+}

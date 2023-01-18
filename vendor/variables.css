@@ -1,5 +1,6 @@
 :root {
-  --clr-background: #2A2C2F;
-  --clr-text: #fff;
-  --clr-accent: #aaa;
+  --clr-background-primary: hsla(0, 0%, 20%, 1);
+  --clr-background-secondary: hsla(0, 0%, 18%, 1);
+  --clr-text-primary: hsla(0, 0%, 100%, 1);
+  --clr-text-secondary: hsla(0, 0%, 90%, 1);
 }

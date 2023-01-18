@@ -1,0 +1,7 @@
+.training {
+  padding-top: 150px;
+  padding-bottom: 120px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: minmax(400px, 570px) minmax(400px, 580px);
+}

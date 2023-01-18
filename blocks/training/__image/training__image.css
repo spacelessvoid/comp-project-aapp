@@ -1,0 +1,7 @@
+.training__image {
+  background-image: url(../../../images/training.jpg);
+  min-height: 460px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

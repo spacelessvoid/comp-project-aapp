@@ -1,0 +1,8 @@
+.surface__gallery {
+  display: flex;
+  gap: 40px;
+  margin: 80px 0 50px;
+  max-width: 1320px;
+  overflow-x: hidden;
+  position: relative;
+}

@@ -1,0 +1,7 @@
+.quote__author-who-is {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--clr-text-secondary);
+  opacity: .7;
+}

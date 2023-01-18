@@ -1,0 +1,6 @@
+.header__navigation {
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px 120px;
+}
