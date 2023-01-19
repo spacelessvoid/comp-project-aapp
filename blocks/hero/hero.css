@@ -1,5 +1,4 @@
 .hero {
-  box-sizing: border-box;
   padding: 20px 0 60px 120px;
   display: grid;
   gap: 50px;
