@@ -4,3 +4,21 @@
   margin: 0 auto;
   padding: 28px 120px;
 }
+
+@media screen and (max-width: 1279px) {
+  .header__navigation {
+    padding-inline: 60px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .header__navigation {
+    padding-inline: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__navigation {
+    padding-inline: 18px;
+  }
+}

@@ -3,3 +3,10 @@
   justify-content: space-between;
   gap: 30px;
 }
+
+@media screen and (max-width: 1080px) {
+  .bikes__gallery {
+    justify-content: center;
+    gap: 15px;
+  }
+}

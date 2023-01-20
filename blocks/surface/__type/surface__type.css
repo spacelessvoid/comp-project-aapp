@@ -6,3 +6,9 @@
   height: 40px;
   background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 1080px) {
+  .surface__type {
+    width: 70px;
+  }
+}

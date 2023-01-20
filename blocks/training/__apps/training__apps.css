@@ -6,3 +6,10 @@
   line-height: 1.55;
   font-weight: 600;
 }
+
+@media screen and (max-width: 850px) {
+  .training__apps {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}

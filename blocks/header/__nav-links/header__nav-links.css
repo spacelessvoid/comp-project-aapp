@@ -6,3 +6,16 @@
   justify-content: flex-end;
   gap: 34px;
 }
+
+@media screen and (max-width: 850px) {
+  .header__nav-links {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__nav-links {
+    display: none;
+  }
+}

@@ -4,12 +4,37 @@
   border-radius: 20px;
   position: sticky;
   top: 347px;
-  margin: 0 0 79px -200px;
+  margin: 0 0 79px -150px;
   max-width: 340px;
-  height: 260px;
+  min-height: 260px;
   padding: 20px 50px;
-  background-image: url(../../../images/bike-fix.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
+  object-position: center;
+}
+
+
+@media screen and (max-width: 1279px) {
+  .hero__sticky {
+    top: 300px;
+    padding: 15px 30px;
+    max-width: 315px;
+    min-height: 210px;
+    margin-left: -30px;
+    margin-bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero__sticky {
+    top: 120px;
+    padding: 11px 27px;
+    max-width: 181px;
+    min-height: 138px;
+    margin-bottom: 37px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__sticky {
+    top: 250px;
+  }
 }

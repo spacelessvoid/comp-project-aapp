@@ -2,3 +2,20 @@
   display: flex;
   gap: 20px;
 }
+
+@media screen and (max-width: 850px) {
+  .surface__switcher-buttons {
+    margin-bottom: 40px;
+    margin-left: auto;
+    gap: 15px;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .surface__switcher-buttons {
+    gap: 10px;
+  }
+}

@@ -4,4 +4,21 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+@media screen and (max-width: 850px) {
+  .training__image {
+    min-height: 350px;
+
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .training__image {
+    min-height: 225px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }

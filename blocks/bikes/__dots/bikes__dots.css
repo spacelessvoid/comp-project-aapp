@@ -1,0 +1,13 @@
+.bikes__dots {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+
+  .bikes__dots {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

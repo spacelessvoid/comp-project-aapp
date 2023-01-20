@@ -4,3 +4,15 @@
   align-items: flex-end;
   margin-bottom: 55px;
 }
+
+@media screen and (max-width: 850px) {
+  .bikes__surface-types {
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .bikes__surface-types {
+    display: none;
+  }
+}

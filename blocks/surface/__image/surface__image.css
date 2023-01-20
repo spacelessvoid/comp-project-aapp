@@ -1,2 +1,9 @@
-.surface__image {
+@media screen and (max-width: 850px) {
+  .surface__image {
+    max-width: 100%;
+  }
+
+  .surface__image:nth-of-type(2) {
+    display: none;
+  }
 }

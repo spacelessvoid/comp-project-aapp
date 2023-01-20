@@ -1,0 +1,20 @@
+.bikes__dropdown {
+  padding: 8px 12px;
+  width: 114px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #E3E3E3;
+  border-radius: 2px;
+  font-size: 11px;
+  line-height: 1.27;
+  font-weight: 600;
+  background-color: var(--clr-background-primary);
+  color: var(--clr-text-primary);
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .bikes__dropdown {
+    display: block;
+  }
+}

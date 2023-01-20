@@ -1,4 +1,10 @@
 .hero__content {
-  max-width: 460px;
-  padding-top: 60px;
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+
+@media screen and (max-width: 500px) {
+  .hero__content {
+    grid-row: 3/4;
+  }
 }

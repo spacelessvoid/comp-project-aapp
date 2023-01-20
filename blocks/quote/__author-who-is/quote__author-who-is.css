@@ -5,3 +5,15 @@
   color: var(--clr-text-secondary);
   opacity: .7;
 }
+
+@media screen and (max-width: 1080px) {
+  .quote__author-who-is {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .quote__author-who-is {
+    font-size: 10px;
+  }
+}

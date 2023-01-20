@@ -1,31 +1,28 @@
-.surface {
+.bikes {
   padding: 60px 120px;
-  display: grid;
 }
 
+
 @media screen and (max-width: 1279px) {
-  .surface {
+  .bikes {
     padding-inline: 60px;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .surface {
+  .bikes {
     padding-inline: 30px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(3, auto);
   }
 }
 
 @media screen and (max-width: 500px) {
-  .surface {
+  .bikes {
     padding: 40px 18px;
     margin-top: 40px;
     position: relative;
-    grid-template-rows: repeat(3, auto);
   }
 
-  .surface::before {
+  .bikes::before {
     position: absolute;
     content: '';
     top: 0;
@@ -34,5 +31,4 @@
     height: 1px;
     background-color: #e3e3e3;
   }
-
 }

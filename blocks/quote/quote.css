@@ -1,5 +1,30 @@
 .quote {
+  padding: 60px 120px;
   display: grid;
   gap: 80px;
-  grid-template-columns: minmax(400px, 650px) minmax(300px, 470px);
+  grid-template-columns: minmax(170px, 650px) minmax(180px, 470px);
+}
+
+
+@media screen and (max-width: 1279px) {
+  .quote {
+    padding-inline: 60px;
+    gap: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .quote {
+    padding-inline: 30px;
+    gap: 30px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .quote {
+    padding: 60px 18px 40px;
+    grid-template-columns: minmax(284px, 1fr);
+    gap: 0;
+  }
 }

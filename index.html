@@ -13,6 +13,7 @@
 
   <header class="header">
     <nav class="header__navigation">
+      <img src="./images/hamburger.svg" alt="Кнопка меню" class="header__hamburger">
       <ul class="header__nav-links">
         <li class="header__link"><a href="#surface" class="link">Покрытия и&nbsp;градиенты</a></li>
         <li class="header__link"><a href="#bikes" class="link">Велосипеды</a></li>
@@ -24,20 +25,20 @@
   <main class="content">
 
     <section class="hero">
+      <h1 class="hero__title section-title">Шоссе, ТТ и&nbsp;Грэвел</h1>
       <div class="hero__content">
-        <h1 class="hero__title section-title">Шоссе, ТТ и&nbsp;Грэвел</h1>
         <p class="hero__text section-text">Триатлонные старты, горные серпантины или грейвел заезды по&nbsp;живописным
           маршрутам&nbsp;&mdash; нужно только определиться с&nbsp;выбором велосипеда и&nbsp;отправиться в&nbsp;путь.</p>
         <a href="#" class="button hero__button">Подробнее</a>
         <p class="hero__bike-name">Cannondale Systemsix</p>
       </div>
       <div class="hero__image">
-        <div class="hero__sticky"></div>
+        <img class="hero__sticky" src="./images/bike-fix.png" alt="Cannondale Systemsix">
       </div>
 
     </section>
 
-    <section class="quote section-center" aria-label="Секция с цитатой">
+    <section class="quote" aria-label="Секция с цитатой">
       <div class="quote__image"></div>
       <figure class="quote__content">
         <blockquote class="quote__text">
@@ -50,7 +51,7 @@
       </figure>
     </section>
 
-    <section class="surface section-center" id="surface">
+    <section class="surface" id="surface">
       <h2 class="surface__title section-title">Шоссе</h2>
       <p class="surface__text section-text">На&nbsp;шоссейном велосипеде можно ездить по&nbsp;асфальту на&nbsp;разных
         градиентах: будь&nbsp;то горы или равнины. Гонки проходят в&nbsp;командном пелотоне, но&nbsp;тренироваться можно
@@ -65,24 +66,12 @@
 
       </div>
       <div class="surface__switcher-buttons">
-        <button class="surface__button surface__button_left">
-          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="50" height="50" rx="25" fill="#434343" />
-            <path d="M27 17L20 25L27 33" stroke="white" stroke-width="2" />
-          </svg>
-
-        </button>
-        <button class="surface__button surface__button_right">
-          <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="50" height="50" rx="25" fill="#434343" />
-            <path d="M23 33L30 25L23 17" stroke="white" stroke-width="2" />
-          </svg>
-
-        </button>
+        <button class="surface__button surface__button_left"></button>
+        <button class="surface__button surface__button_right"></button>
       </div>
     </section>
 
-    <section class="bikes section-center" id="bikes">
+    <section class="bikes" id="bikes">
       <div class="bikes__top">
         <h2 class="bikes__title section-title">Велосипеды</h2>
         <div class="bikes__surface-types">
@@ -90,6 +79,11 @@
           <a href="#" class="bikes__type bikes__type_inactive link">Грэвел</a>
           <a href="#" class="bikes__type bikes__type_inactive link">ТТ</a>
         </div>
+        <select class="bikes__dropdown" name="surface-types" id="surface-select">
+          <option value="Шоссе" selected>Шоссе</option>
+          <option value="Грэвел">Грэвел</option>
+          <option value="ТТ">ТТ</option>
+        </select>
       </div>
       <div class="bikes__gallery">
         <div class="bikes__model">
@@ -115,26 +109,36 @@
           <p class="bikes__name">Trek Domane SL-7</>
         </div>
       </div>
+      <div class="bikes__dots">
+        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2" r="2" fill="#CACACA" />
+        </svg>
+        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2" r="2" fill="#151515" />
+        </svg>
+        <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="2" cy="2" r="2" fill="#151515" />
+        </svg>
+
+      </div>
     </section>
 
-    <section class="training section-center" id="training">
-      <div class="training__content">
-        <h2 class="section-title">Тренировки</h2>
-        <p class="section-text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
-          а&nbsp;записать
-          эти тренировки поможет приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.
-        </p>
-        <div class="training__apps">
-          <a href="https://www.komoot.com" class="link">Komoot</a>
-          <a href="https://www.strava.com" class="link">Strava</a>
-        </div>
+    <section class="training" id="training">
+      <h2 class="training__title section-title">Тренировки</h2>
+      <p class="training__text section-text">
+        Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а&nbsp;записать эти тренировки поможет
+        приложение Strava, а&nbsp;также это приложение позволит построить тренировочный план.
+      </p>
+      <div class="training__apps">
+        <a href="https://www.komoot.com" class="link">Komoot</a>
+        <a href="https://www.strava.com" class="link">Strava</a>
       </div>
       <div class="training__image"></div>
     </section>
 
   </main>
 
-  <footer class="footer section-center">
+  <footer class="footer">
     <form action="" class="mailing-list">
       <h2 class="mailing-list__title">Подпишитесь на<br>рассылку —</h2>
       <input type="email" placeholder="Ваш e-mail" class="mailing-list__input">

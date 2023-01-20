@@ -14,3 +14,9 @@
   top: 8px;
   left: 224px;
 }
+
+@media screen and (max-width: 850px) {
+  .hero__bike-name {
+    display: none;
+  }
+}

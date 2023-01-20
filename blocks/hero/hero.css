@@ -1,6 +1,27 @@
 .hero {
   padding: 20px 0 60px 120px;
   display: grid;
-  gap: 50px;
-  grid-template-columns: minmax(400px, 660px) minmax(400px, 610px);
+  column-gap: 50px;
+  grid-template-columns: minmax(210px, 660px) minmax(220px, 610px);
+  grid-template-rows: auto 1fr;
+}
+
+@media screen and (max-width: 1279px) {
+  .hero {
+    padding-left: 60px;
+    column-gap: 35px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .hero {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    padding: 40px 18px;
+    grid-template-columns: minmax(284px, 1fr);
+  }
 }

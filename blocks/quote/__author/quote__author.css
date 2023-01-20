@@ -4,3 +4,15 @@
   line-height: 1.6;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1080px) {
+  .quote__author {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .quote__author {
+    font-size: 14px;
+  }
+}

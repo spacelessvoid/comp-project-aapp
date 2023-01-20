@@ -1,3 +1,4 @@
 .surface__type_1 {
   background-image: url(../../../../images/surface-type-1.svg);
+  background-size: contain;
 }
