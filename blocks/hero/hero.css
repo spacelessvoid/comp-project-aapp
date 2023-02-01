@@ -1,3 +1,10 @@
+@import url(./__title/hero__title.css);
+@import url(./__content/hero__content.css);
+@import url(./__bike-name/hero__bike-name.css);
+@import url(./__image/hero__image.css);
+@import url(./__sticky/hero__sticky.css);
+@import url(./__button/hero__button.css);
+
 .hero {
   padding: 20px 0 60px 120px;
   display: grid;

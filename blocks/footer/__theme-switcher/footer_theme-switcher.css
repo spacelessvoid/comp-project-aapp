@@ -1,0 +1,6 @@
+.footer_theme-switcher {
+	margin-top: 90px;
+	grid-column: -1/-2;
+	align-self: start;
+	justify-self: end;
+}

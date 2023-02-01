@@ -1,3 +1,6 @@
+@import url(./__apps/training__apps.css);
+@import url(./__image/training__image.css);
+
 .training {
   padding: 150px 120px 120px;
   display: grid;

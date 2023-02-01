@@ -1,0 +1,9 @@
+@import url(./__checkbox/theme-switcher__checkbox.css);
+@import url(./__icon/_theme/theme-switcher__icon_theme_dark.css);
+
+.theme-switcher {
+	--switcher-icons: hsl(0, 0%, 81%);
+	display: flex;
+	align-items: center;
+	gap: 22px;
+}

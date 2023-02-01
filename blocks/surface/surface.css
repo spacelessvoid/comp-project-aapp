@@ -1,3 +1,14 @@
+@import url(./__title/surface__title.css);
+@import url(./__text/surface__text.css);
+@import url(./__gallery/surface__gallery.css);
+@import url(./__image/surface__image.css);
+@import url(./__type/surface__type.css);
+@import url(./__type/_1/surface__type_1.css);
+@import url(./__switcher-buttons/surface__switcher-buttons.css);
+@import url(./__button/surface__button.css);
+@import url(./__button/_theme/surface__button_theme_dark.css);
+@import url(./__button/_right/surface__button_right.css);
+
 .surface {
   padding: 60px 120px;
   display: grid;

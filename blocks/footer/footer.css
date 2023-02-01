@@ -1,6 +1,12 @@
+@import url(./__copyright/footer__copyright.css);
+@import url(./__theme-switcher/footer_theme-switcher.css);
+
 .footer {
   padding: 80px 120px 60px;
   background-color: var(--clr-background-secondary);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
 @media screen and (max-width: 1279px) {
