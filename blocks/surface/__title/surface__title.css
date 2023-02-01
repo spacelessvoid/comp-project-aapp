@@ -1,3 +1,7 @@
+.surface__title:not(:first-of-type) {
+  display: none;
+}
+
 @media screen and (max-width: 850px) {
   .surface__title {
     grid-column: 1/2;

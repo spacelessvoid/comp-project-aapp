@@ -1,6 +1,6 @@
 :root {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 30px;
   --clr-background-primary: hsla(0, 0%, 96%, 1);
   --clr-background-secondary: hsla(0, 0%, 94%, 1);
   --clr-text-primary: hsla(0, 0%, 8%, 1);
@@ -13,5 +13,3 @@
   --clr-text-primary: hsla(0, 0%, 100%, 1);
   --clr-text-secondary: hsla(0, 0%, 90%, 1);
 }
-
-

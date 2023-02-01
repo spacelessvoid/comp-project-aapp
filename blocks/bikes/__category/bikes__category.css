@@ -1,0 +1,16 @@
+.bikes__category {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bikes__category:not(:first-of-type) {
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .bikes__category {
+    justify-content: center;
+    gap: 15px;
+  }
+}

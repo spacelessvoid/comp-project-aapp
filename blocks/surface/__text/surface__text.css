@@ -1,3 +1,7 @@
+.surface__text:not(:first-of-type) {
+  display: none;
+}
+
 @media screen and (max-width: 850px) {
   .surface__text {
     grid-column: 1/3;
