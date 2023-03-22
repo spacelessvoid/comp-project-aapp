@@ -4,7 +4,7 @@
 
 	--x-width: calc(var(--hamburger-height) * 1.41421356237);
 
-	display: flex;
+	display: none;
 	flex-direction: column;
 	gap: var(--hamburger-gap);
 	width: max-content;
