@@ -19,6 +19,6 @@
 
 @media screen and (max-width: 500px) {
   .header__navigation {
-    padding-inline: 18px;
+    padding: 28px 18px 46px;
   }
 }

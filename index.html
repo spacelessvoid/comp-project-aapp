@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./pages/index.css">
-  <script defer src="./scripts/index.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
   <title>Шоссе, ТТ и Грэвел</title>
 </head>
 
@@ -14,12 +14,15 @@
 
   <header class="header">
     <nav class="header__navigation">
-      <img src="./images/hamburger.svg" alt="Кнопка меню" class="header__hamburger">
+      <label class="header__hamburger hamburger-menu">
+        <input type="checkbox" />
+      </label>
       <ul class="header__nav-links">
         <li class="header__link"><a href="#surface" class="link">Покрытия и&nbsp;градиенты</a></li>
         <li class="header__link"><a href="#bikes" class="link">Велосипеды</a></li>
         <li class="header__link"><a href="#training" class="link">Тренировки</a></li>
       </ul>
+      
     </nav>
   </header>
 

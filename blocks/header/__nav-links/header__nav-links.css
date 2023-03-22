@@ -5,6 +5,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 34px;
+  background-color: var(--clr-background-primary);
 }
 
 @media screen and (max-width: 850px) {
@@ -16,6 +17,19 @@
 
 @media screen and (max-width: 500px) {
   .header__nav-links {
-    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 32px;
+    transition: translate var(--animation-timing);
+    translate: 200%;
+    margin-top: 70px;
+    padding-top: 70px;
+    width: 100vw;
+    min-height: 100vh;
   }
+
 }

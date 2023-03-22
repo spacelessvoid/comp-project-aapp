@@ -1,3 +1,4 @@
 .bikes__gallery {
 	display: flex;
+	justify-content: center;
 }

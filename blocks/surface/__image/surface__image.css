@@ -1,3 +1,7 @@
+.surface__image {
+  /* transition: ; */
+}
+
 @media screen and (max-width: 850px) {
   .surface__image {
     max-width: 100%;
