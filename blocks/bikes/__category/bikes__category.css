@@ -4,9 +4,9 @@
   gap: 30px;
 }
 
-.bikes__category:not(:first-of-type) {
+/* .bikes__category:not(:first-of-type) {
   display: none;
-}
+} */
 
 @media screen and (max-width: 1080px) {
   .bikes__category {

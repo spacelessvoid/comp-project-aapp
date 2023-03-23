@@ -1,14 +1,13 @@
 .bikes__type {
   font-size: 18px;
   line-height: 1.55;
-  font-weight: 600;
-  background-color: transparent;
-  padding: 0;
-  border: 0;
-  outline: 0;
+  color: var(--clr-text-secondary);
+  letter-spacing: 1px;
+  opacity: .5;
   transition: all .5s;
 }
 
 .bikes__type:hover {
   cursor: pointer;
+  opacity: .5;
 }

@@ -17,6 +17,7 @@
 
 @media screen and (max-width: 500px) {
   .header__nav-links {
+    background-color: var(--clr-background-secondary);
     position: absolute;
     top: 0;
     right: 0;

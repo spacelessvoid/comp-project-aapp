@@ -1,10 +1,10 @@
 :root {
   scroll-behavior: smooth;
   scroll-padding-top: 30px;
-  --clr-background-primary: hsla(0, 0%, 96%, 1);
-  --clr-background-secondary: hsla(0, 0%, 94%, 1);
-  --clr-text-primary: hsla(0, 0%, 8%, 1);
-  --clr-text-secondary: hsla(0, 0%, 13%, 1);
+  --clr-background-primary: hsl(0, 0%, 96%);
+  --clr-background-secondary: hsl(0, 0%, 94%);
+  --clr-text-primary: hsl(0, 0%, 8%);
+  --clr-text-secondary: hsl(0, 0%, 13%);
 
   /* Hamburger button */
   --bar-width: 22px;
@@ -16,13 +16,8 @@
 }
 
 .page_theme_dark {
-  --clr-background-primary: hsla(0, 0%, 20%, 1);
-  --clr-background-secondary: hsla(0, 0%, 18%, 1);
-  --clr-text-primary: hsla(0, 0%, 100%, 1);
-  --clr-text-secondary: hsla(0, 0%, 90%, 1);
-}
-
-/* smooth transition when switching to dark mode */
-* {
-  transition: background-color .3s;
+  --clr-background-primary: hsl(0, 0%, 20%);
+  --clr-background-secondary: hsl(0, 0%, 18%);
+  --clr-text-primary: hsl(0, 0%, 100%);
+  --clr-text-secondary: hsl(0, 0%, 90%);
 }

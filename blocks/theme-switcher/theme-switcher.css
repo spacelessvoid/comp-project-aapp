@@ -7,3 +7,19 @@
 	align-items: center;
 	gap: 22px;
 }
+
+@media screen and (max-width: 500px) {
+
+	.theme-switcher {
+		position: fixed;
+		z-index: 3;
+		bottom: 100px;
+		right: calc(50vw - 76.5px);
+		transition: translate var(--animation-timing);
+		translate: 222%;
+	}
+
+	.theme-switcher[data-open="true"] {
+		translate: 0;
+	}
+}

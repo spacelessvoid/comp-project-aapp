@@ -3,4 +3,5 @@
   font-weight: 400;
   background-color: var(--clr-background-primary);
   color: var(--clr-text-primary);
+  overflow-x: hidden;
 }
