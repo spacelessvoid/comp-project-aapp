@@ -5,6 +5,14 @@
   --clr-background-secondary: hsla(0, 0%, 94%, 1);
   --clr-text-primary: hsla(0, 0%, 8%, 1);
   --clr-text-secondary: hsla(0, 0%, 13%, 1);
+
+  /* Hamburger button */
+  --bar-width: 22px;
+  --bar-height: 3px;
+  --hamburger-gap: 5px;
+  --hamburger-margin: 18px;
+  --animation-timing: 150ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 .page_theme_dark {
@@ -12,4 +20,9 @@
   --clr-background-secondary: hsla(0, 0%, 18%, 1);
   --clr-text-primary: hsla(0, 0%, 100%, 1);
   --clr-text-secondary: hsla(0, 0%, 90%, 1);
+}
+
+/* smooth transition when switching to dark mode */
+* {
+  transition: background-color .3s;
 }

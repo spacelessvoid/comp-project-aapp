@@ -29,13 +29,3 @@
 @import url(../blocks/mailing-list/mailing-list.css);
 
 @import url(../blocks/theme-switcher/theme-switcher.css);
-
-
-:root {
-	--bar-width: 22px;
-	--bar-height: 3px;
-	--hamburger-gap: 5px;
-	--hamburger-margin: 18px;
-	--animation-timing: 200ms ease-in-out;
-	--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
-}

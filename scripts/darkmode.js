@@ -1,9 +1,9 @@
 //Dark mode switcher function and user persistent settings
 
 const pageElement = document.querySelector(".page");
-const surfaceButton = document.querySelectorAll(".surface__button");
+const sliderButtons = document.querySelectorAll(".surface__button");
 const themeSwitcherElement = document.querySelector(".theme-switcher");
-const switcherIconElement = themeSwitcherElement.querySelectorAll(
+const switcherIconElements = themeSwitcherElement.querySelectorAll(
   ".theme-switcher__icon"
 );
 const switcherCheckboxElement = themeSwitcherElement.querySelector(
@@ -30,11 +30,11 @@ if (darkMode === "disabled") {
 function enableDarkMode() {
   pageElement.classList.add("page_theme_dark");
 
-  surfaceButton[0].classList.add("surface__button_theme_dark");
-  surfaceButton[1].classList.add("surface__button_theme_dark");
+  sliderButtons[0].classList.add("surface__button_theme_dark");
+  sliderButtons[1].classList.add("surface__button_theme_dark");
 
-  switcherIconElement[0].classList.add("theme-switcher__icon_theme_dark");
-  switcherIconElement[1].classList.add("theme-switcher__icon_theme_dark");
+  switcherIconElements[0].classList.add("theme-switcher__icon_theme_dark");
+  switcherIconElements[1].classList.add("theme-switcher__icon_theme_dark");
 
   localStorage.setItem("darkMode", "enabled");
   switcherCheckboxElement.setAttribute("checked", true);
@@ -43,11 +43,11 @@ function enableDarkMode() {
 function disableDarkMode() {
   pageElement.classList.remove("page_theme_dark");
 
-  surfaceButton[0].classList.remove("surface__button_theme_dark");
-  surfaceButton[1].classList.remove("surface__button_theme_dark");
+  sliderButtons[0].classList.remove("surface__button_theme_dark");
+  sliderButtons[1].classList.remove("surface__button_theme_dark");
 
-  switcherIconElement[0].classList.remove("theme-switcher__icon_theme_dark");
-  switcherIconElement[1].classList.remove("theme-switcher__icon_theme_dark");
+  switcherIconElements[0].classList.remove("theme-switcher__icon_theme_dark");
+  switcherIconElements[1].classList.remove("theme-switcher__icon_theme_dark");
 
   localStorage.setItem("darkMode", "disabled");
   switcherCheckboxElement.removeAttribute("checked");
