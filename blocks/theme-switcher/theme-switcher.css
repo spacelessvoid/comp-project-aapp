@@ -13,7 +13,7 @@
 	.theme-switcher {
 		position: fixed;
 		z-index: 3;
-		bottom: 100px;
+		bottom: 35px;
 		right: calc(50vw - 76.5px);
 		transition: translate var(--animation-timing);
 		translate: 222%;
