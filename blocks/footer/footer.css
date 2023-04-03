@@ -1,28 +1,7 @@
+@import url(./__wrapper/footer__wrapper.css);
 @import url(./__copyright/footer__copyright.css);
 @import url(./__theme-switcher/footer_theme-switcher.css);
 
 .footer {
-  padding: 80px 120px 60px;
   background-color: var(--clr-background-secondary);
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
-}
-
-@media screen and (max-width: 1279px) {
-  .footer {
-    padding-inline: 60px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .footer {
-    padding-inline: 30px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .footer {
-    padding: 60px 18px 25px;
-  }
 }

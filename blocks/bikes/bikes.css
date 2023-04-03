@@ -1,4 +1,4 @@
-@import url(./__top/bikes__top.css);
+@import url(./__title/bikes__title.css);
 @import url(./__surface-types/bikes__surface-types.css);
 @import url(./__type/bikes__type.css);
 @import url(./__dropdown/bikes__dropdown.css);
@@ -12,6 +12,10 @@
 
 .bikes {
   padding: 60px 120px;
+  display: grid;
+  grid-template-areas:
+    "title tabs"
+    "gallery gallery";
 }
 
 
@@ -24,6 +28,10 @@
 @media screen and (max-width: 850px) {
   .bikes {
     padding-inline: 30px;
+    grid-template-areas:
+      "title"
+      "dropdown"
+      "gallery";
   }
 }
 

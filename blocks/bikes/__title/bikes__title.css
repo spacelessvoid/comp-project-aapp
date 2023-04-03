@@ -1,0 +1,4 @@
+.bikes__title {
+	grid-area: title;
+	align-self: end;
+}

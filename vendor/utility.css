@@ -5,6 +5,24 @@
 	animation: wroom 1s;
 }
 
+.radio {
+	display: none;
+}
+
+#one:checked~.panels #one-panel,
+#two:checked~.panels #two-panel,
+#three:checked~.panels #three-panel {
+	display: flex;
+}
+
+#one:checked~.tabs #one-tab,
+#two:checked~.tabs #two-tab,
+#three:checked~.tabs #three-tab {
+	color: var(--clr-text-primary);
+	opacity: 1;
+	background-color: transparent;
+}
+
 @keyframes wroom {
 	0% {
 		opacity: .5;
@@ -25,22 +43,4 @@
 		opacity: 1;
 		transform: translateX(0);
 	}
-}
-
-.radio {
-	display: none;
-}
-
-#one:checked~.panels #one-panel,
-#two:checked~.panels #two-panel,
-#three:checked~.panels #three-panel {
-	display: flex;
-}
-
-#one:checked~.tabs #one-tab,
-#two:checked~.tabs #two-tab,
-#three:checked~.tabs #three-tab {
-	color: var(--clr-text-primary);
-	opacity: 1;
-	background-color: transparent;
 }

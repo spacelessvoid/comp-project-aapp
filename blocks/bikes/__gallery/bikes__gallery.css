@@ -1,4 +1,12 @@
 .bikes__gallery {
+	margin-top: 70px;
 	display: flex;
 	justify-content: center;
+	grid-area: gallery;
+}
+
+@media screen and (max-width: 850px) {
+	.bikes__gallery {
+		margin-top: 20px;
+	}
 }
