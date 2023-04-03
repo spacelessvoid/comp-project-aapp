@@ -3,9 +3,22 @@
   left: 0;
   bottom: 16px;
   width: 98px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  aspect-ratio: 98/40;
+  background-image: url(../../../../images/surface-type-sprite.svg);
+  background-size: cover;
+}
+
+
+[data-surface-type="1"] {
+  background-position: 0 0;
+}
+
+[data-surface-type="2"] {
+  background-position: 0 50%;
+}
+
+[data-surface-type="3"] {
+  background-position: 0 100%;
 }
 
 @media screen and (max-width: 1080px) {

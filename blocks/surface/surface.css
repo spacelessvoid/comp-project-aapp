@@ -3,9 +3,6 @@
 @import url(./__gallery/surface__gallery.css);
 @import url(./__image/surface__image.css);
 @import url(./__type/surface__type.css);
-@import url(./__type/_image/surface__type_image_1.css);
-@import url(./__type/_image/surface__type_image_2.css);
-@import url(./__type/_image/surface__type_image_3.css);
 @import url(./__switcher-buttons/surface__switcher-buttons.css);
 @import url(./__button/surface__button.css);
 @import url(./__button/_theme/surface__button_theme_dark.css);

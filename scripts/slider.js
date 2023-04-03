@@ -2,25 +2,28 @@
 // Gallery slider
 ///////////////////
 
+const sliderImages = document.querySelectorAll("[data-surfaces-slider-item]");
+const elementsArrLength = sliderImages.length;
+
 const surfaceTitleElements = document.querySelectorAll(".surface__title");
 const surfaceTextElements = document.querySelectorAll(".surface__text");
-const surfaceImageElements = document.querySelectorAll(".surface__image");
-const imagesArrLength = surfaceImageElements.length;
 const surfaceTypeElement = document.querySelector(".surface__type");
+
 const surfaceButtonLeft = document.querySelector(".surface__button_left");
 const surfaceButtonRight = document.querySelector(".surface__button_right");
 
-const shiftedElements = [surfaceTitleElements, surfaceTextElements];
-
 let n = 0;
 
+// Setting the decorative image of the active surface type
 function handleSurfaceType() {
-  surfaceTypeElement.className = "surface__type";
-  surfaceTypeElement.classList.add(`surface__type_image_${n + 1}`);
+  surfaceTypeElement.setAttribute("data-surface-type", n + 1);
 }
 
-// Function for setting the display value of text elements (<h2> & <p> tags) related to the selected image / surface type
-// n2 is the index of selected image / surface type
+// Setting the display value of text elements (<h2> & <p> tags) related to the selected image / surface type
+// `n2` is the index of the selected image / surface type
+
+const shiftedElements = [surfaceTitleElements, surfaceTextElements];
+
 function setDisplayProp(
   { prop1 = "none", n1 },
   { prop2 = "block", n2 },
@@ -33,18 +36,18 @@ function setDisplayProp(
 }
 
 function shiftRight() {
-  if (n === imagesArrLength - 1) {
-    for (let i = 0; i < imagesArrLength; i++) {
-      surfaceImageElements[i].style.order = 0;
+  if (n === elementsArrLength - 1) {
+    for (let i = 0; i < elementsArrLength; i++) {
+      sliderImages[i].style.order = 0;
     }
 
     n = 0;
 
     handleSurfaceType();
 
-    setDisplayProp({ n1: imagesArrLength - 1 }, { n2: n });
+    setDisplayProp({ n1: elementsArrLength - 1 }, { n2: n });
   } else {
-    surfaceImageElements[n].style.order = n + imagesArrLength;
+    sliderImages[n].style.order = n + elementsArrLength;
 
     n++;
 
@@ -57,11 +60,11 @@ function shiftRight() {
 function shiftLeft() {
   if (n === 0) {
     // sets the conditions as if user scrolled to the last image
-    for (let i = 0; i < imagesArrLength - 1; i++) {
-      surfaceImageElements[i].style.order = i + imagesArrLength;
+    for (let i = 0; i < elementsArrLength - 1; i++) {
+      sliderImages[i].style.order = i + elementsArrLength;
     }
 
-    n = imagesArrLength - 1;
+    n = elementsArrLength - 1;
 
     handleSurfaceType();
 
@@ -69,7 +72,7 @@ function shiftLeft() {
   } else {
     n--;
 
-    surfaceImageElements[n].style.order = 0;
+    sliderImages[n].style.order = 0;
 
     handleSurfaceType();
 
