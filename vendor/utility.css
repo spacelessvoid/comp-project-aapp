@@ -2,7 +2,7 @@
 
 .panel {
 	display: none;
-	animation: wroom 1s;
+	animation: wroom 1s ease-out;
 }
 
 .radio {

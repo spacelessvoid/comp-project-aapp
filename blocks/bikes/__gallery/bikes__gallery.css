@@ -7,6 +7,6 @@
 
 @media screen and (max-width: 850px) {
 	.bikes__gallery {
-		margin-top: 20px;
+		margin: 20px 0 30px;
 	}
 }

@@ -3,7 +3,7 @@ import * as darkmode from "./darkmode.js";
 
 const surfaceSlider = new Slider({
   container: ".surface",
-  slides: "[data-surfaces-slider-item]",
+  slides: ".surface__image",
   auxElements: [".surface__text", ".surface__title"],
   decorElement: ".surface__type",
   buttonLeft: ".surface__button_left",
@@ -18,6 +18,7 @@ bikesCategoryList.forEach((category) => {
     container: `#${category.id}`,
     slides: ".bikes__model",
     auxElements: [".bikes__model"],
+    decorElement: ".bikes__dots",
     enableTouchControls: true,
   });
   bikesSlider.enable();

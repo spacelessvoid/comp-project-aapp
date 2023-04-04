@@ -5,6 +5,7 @@
   --clr-background-secondary: hsl(0, 0%, 94%);
   --clr-text-primary: hsl(0, 0%, 8%);
   --clr-text-secondary: hsl(0, 0%, 13%);
+  --clr-negative: hsl(0, 0%, 30%);
 
   /* Hamburger button */
   --bar-width: 22px;
@@ -20,4 +21,5 @@
   --clr-background-secondary: hsl(0, 0%, 18%);
   --clr-text-primary: hsl(0, 0%, 100%);
   --clr-text-secondary: hsl(0, 0%, 90%);
+  --clr-negative: hsl(0, 0%, 8%);
 }
