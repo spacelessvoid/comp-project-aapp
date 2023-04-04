@@ -1,5 +1,27 @@
-import * as slider from "./slider.js";
+import Slider from "./slider.js";
 import * as darkmode from "./darkmode.js";
+
+const surfaceSlider = new Slider({
+  container: ".surface",
+  slides: "[data-surfaces-slider-item]",
+  auxElements: [".surface__text", ".surface__title"],
+  decorElement: ".surface__type",
+  buttonLeft: ".surface__button_left",
+  buttonRight: ".surface__button_right",
+  enableButtonControls: true,
+});
+surfaceSlider.enable();
+
+const bikesCategoryList = document.querySelectorAll(".bikes__category");
+bikesCategoryList.forEach((category) => {
+  const bikesSlider = new Slider({
+    container: `#${category.id}`,
+    slides: ".bikes__model",
+    auxElements: [".bikes__model"],
+    enableTouchControls: true,
+  });
+  bikesSlider.enable();
+});
 
 // --- Opening/closing mobile nav menu ---
 

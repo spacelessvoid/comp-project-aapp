@@ -1,7 +1,7 @@
 .bikes__link {
   display: block;
   background-color: hsl(0, 0%, 96%);
-  box-shadow: -20px 60px 220px hsla(0, 0%, 0%, 0.44);
+  /* box-shadow: -20px 60px 220px hsla(0, 0%, 0%, 0.44); */
   border-radius: 20px;
   padding: 20px;
 }

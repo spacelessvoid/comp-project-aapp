@@ -9,15 +9,15 @@
 }
 
 
-[data-surface-type="1"] {
+[data-decor-type="1"] {
   background-position: 0 0;
 }
 
-[data-surface-type="2"] {
+[data-decor-type="2"] {
   background-position: 0 50%;
 }
 
-[data-surface-type="3"] {
+[data-decor-type="3"] {
   background-position: 0 100%;
 }
 
